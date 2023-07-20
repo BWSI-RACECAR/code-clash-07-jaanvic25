@@ -34,11 +34,21 @@ Input: xO Output: False
 
 class Solution:
     def count_XO(self, string):
+            xcount = 0
+            ocount = 0
+            for letter in string:
+                 if letter == "X":
+                      xcount += 1
+                 elif letter == "O":
+                      ocount += 1
+            if ocount == xcount:
+                return True
+            else:
+                return False
             #type string: string
             #return type: boolean
             
             #TODO: Write code below to returnn a boolean value with the solution to the prompt.
-            pass
                 
 def main():
     input1=input()
